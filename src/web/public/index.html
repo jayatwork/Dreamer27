@@ -1,9 +1,9 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    
-        <title>TODO App</title>
-    
+
+        <title>Dreamer27 App</title>
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -12,10 +12,10 @@
 
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
- 
+
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-       
+
         <!-- Vue.js -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2>My Tasks</h2>
+                    <h2>Recent activity</h2>
                     <ul class="list-group">
                         <li class="list-group-item" v-for="task in tasks">
                             {{ task.name }}
@@ -36,13 +36,13 @@
                         </li>
                     </ul>
                     <div class="input-group">
-                        <input type="text" 
-                            class="form-control" 
-                            placeholder="New Task" 
+                        <input type="text"
+                            class="form-control"
+                            placeholder="New Task"
                             v-on:keyup.enter="createTask"
                             v-model="newTask.name">
                         <span class="input-group-btn">
-                            <button class="btn btn-primary" type="button" v-on:click="createTask">Create</button>
+                            <button class="btn btn-primary" type="button" v-on:click="createTask">Start Dreaming ...</button>
                         </span>
                     </div><!-- /input-group -->
                 </div>
