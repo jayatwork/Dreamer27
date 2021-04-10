@@ -3,10 +3,7 @@ package main
 import (
 	"database/sql"
 	"github.com/jayatwork/Dreamer27/src/web/handlers"
-
-  "net/http"
   "github.com/labstack/echo"
-  "github.com/labstack/echo/middleware"
 )
 
 func main() {
